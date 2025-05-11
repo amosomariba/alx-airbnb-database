@@ -74,17 +74,3 @@ CREATE TABLE Message (
     FOREIGN KEY (recipient_id) REFERENCES User(user_id)
 );
 
-
-
-
-
-
-
-
-
-
-
-
-
- 
-

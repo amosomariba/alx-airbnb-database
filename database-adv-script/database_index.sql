@@ -74,3 +74,10 @@ WHERE Booking.status = 'confirmed';
 
 -- View profiling results
 SHOW PROFILES;
+
+
+EXPLAIN ANALYZE
+SELECT * 
+FROM Booking 
+JOIN User ON Booking.user_id = User.user_id 
+WHERE Booking.status = 'confirmed';

@@ -63,3 +63,36 @@ This script demonstrates the use of subqueries in SQL to perform advanced data r
 3. Run the queries in `subqueries.sql` to explore subquery operations and their results.
 
 ---
+
+# Aggregations and Window Functions SQL Script
+
+## 📖 Overview
+
+This script demonstrates the use of aggregation functions and window functions in SQL to analyze data in the Airbnb database. These queries help summarize data and provide advanced analytics, such as ranking and counting.
+
+---
+
+## 📂 File
+
+- **`aggregations_and_window_functions.sql`**: Contains SQL queries that use aggregation (`COUNT`, `GROUP BY`) and window functions (`RANK`, `ROW_NUMBER`) on tables like `Booking` and `Property`.
+
+---
+
+## 📝 Queries Included
+
+1. **Total Bookings per User**  
+   Uses `COUNT` and `GROUP BY` to find the total number of bookings made by each user.
+
+2. **Ranking Properties by Bookings**  
+   Uses the `RANK()` window function to rank properties based on the total number of bookings they have received.
+
+---
+
+## 🚀 How to Use
+
+1. Ensure you are connected to the `airbnb_db` database.
+2. Open your SQL client or database management tool.
+3. Run the queries in `aggregations_and_window_functions.sql` to explore aggregation and window function operations.
+
+---
+

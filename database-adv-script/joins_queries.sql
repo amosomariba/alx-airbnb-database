@@ -22,12 +22,35 @@ SELECT
 FROM Booking B
 LEFT JOIN User U ON B.user_id = U.user_id
 
-UNION
+FULL OUTER JOIN
 
 -- RIGHT JOIN: all users + matched bookings (or NULL)
 SELECT 
     B.booking_id, B.property_id, B.user_id AS booking_user_id, 
     B.start_date, B.end_date, B.total_price, B.status, 
     U.user_id AS user_user_id, U.first_name, U.last_name, U.email
-FROM Booking B
+-- FROM Booking B
 RIGHT JOIN User U ON B.user_id = U.user_id;
+
+
+SELECT *
+FROM `Booking`
+LEFT JOIN `User`
+ON `Booking`.user_id = `User`.user_id
+
+FULL OUTER JOIN
+
+-- SELECT *
+-- FROM `Booking`
+-- RIGHT JOIN `User`
+-- ON `Booking`.user_id = `User`.user_id;
+
+
+
+SELECT *
+FROM 
+    `User` U
+FULL OUTER JOIN
+    `Booking` b ON u.user_id = b.user_id
+ORDER BY
+    u.last_name, u.first_name, b.start_date;

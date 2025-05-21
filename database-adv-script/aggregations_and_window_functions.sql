@@ -15,3 +15,13 @@ SELECT
 FROM Booking
 GROUP BY property_id;
 
+-- Alternative
+
+SELECT 
+    property_id,
+    COUNT(*) AS total_bookings,
+    ROW_NUMBER() OVER (ORDER BY COUNT(*) DESC) AS booking_row
+FROM Booking
+GROUP BY property_id;
+
+

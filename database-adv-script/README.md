@@ -32,3 +32,34 @@ This script demonstrates advanced SQL join operations on the Airbnb database. It
 3. Run the queries in `joins_queries.sql` to explore join operations and their results.
 
 ---
+# Advanced SQL ```subqueries.sql```
+
+## 📖 Overview
+
+This script demonstrates the use of subqueries in SQL to perform advanced data retrieval from the Airbnb database. Subqueries allow you to filter and aggregate data based on the results of other queries, enabling more complex and insightful analysis.
+
+---
+
+## 📂 File
+
+- **`subqueries.sql`**: Contains SQL queries that utilize subqueries for filtering and aggregation on tables such as `Property`, `Review`, `User`, and `Booking`.
+
+---
+
+## 📝 Queries Included
+
+1. **Properties with High Average Ratings**  
+   Retrieves all properties that have an average review rating greater than 4.0 using a subquery with `GROUP BY` and `HAVING`.
+
+2. **Users with Multiple Bookings**  
+   Retrieves all users who have made more than three bookings, using a subquery to count bookings per user.
+
+---
+
+## 🚀 How to Use
+
+1. Ensure you are connected to the `airbnb_db` database.
+2. Open your SQL client or database management tool.
+3. Run the queries in `subqueries.sql` to explore subquery operations and their results.
+
+---
